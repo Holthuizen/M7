@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subjects",
+  "info": {
+    "name": "Subject"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "module": {
+      "type": "enumeration",
+      "enum": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8",
+        "minor",
+        "other"
+      ]
+    },
+    "questions": {
+      "via": "subjects",
+      "collection": "question"
+    }
+  }
+}
