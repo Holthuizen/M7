@@ -20,8 +20,7 @@ class Question:
         token = f'Bearer {jwt}'
         endpoint = self.api_url + "/questions"
         data = json.dumps({
-            'Title': params["title"],
-            'description': params["description"],
+            'title': params["title"],
             'question': params["question"]
         })
         headers = {'Content-Type': 'application/json', 'Authorization': token}

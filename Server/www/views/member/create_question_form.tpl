@@ -7,8 +7,6 @@
 <form action="/member/question/create" method="POST">
   <label for="title">Title:</label><br>
   <input type="text" name="title" value=""><br>
-  <label for="dname">Describtion:</label><br>
-  <input type="text" name="description" value=""><br><br>
   <label for="qname">Question</label><br>
   <input type="text" name="question" value=""><br><br>
   <input type="submit" value="Submit">

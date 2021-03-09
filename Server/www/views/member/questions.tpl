@@ -10,20 +10,17 @@
 <hr>
 <table>
   %for item in data:
-    Title: <b> {{item['Title']}} </b>
-    <br/>
-    Decription: <b> {{item["description"]}} </b>
+    Title: <b> {{item['title']}} </b>
     <br/>
     Question: <b> {{item["question"]}} </b>
     <br/>
     published at : <b> {{item['published_at']}} </b>
     <br/>
-    published by:  <b> {{item['author'][0]['username']}} </b>
     <br/>
     Subjects:
-    %for category in item['categories']: 
+    %for subject in item['subjects']: 
          <ul>
-            <li>{{category['Subject']}}</li>
+            <li>{{subject['name']}}</li>
          </ul>
     %end
     <br/>
